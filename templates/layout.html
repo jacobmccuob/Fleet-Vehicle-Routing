@@ -1,0 +1,30 @@
+<!DOCTYPE HTML>
+<head>
+  <style>.button {
+    margin: 0 auto;
+    display: block;
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius:28px;
+  	border:1px solid #18ab29;
+  }</style>
+  <title>{% block title %}{% endblock %}</title>
+</head>
+
+<body>
+  <form action="/refresh">
+    <input type="submit" name="Refresh" value="Refresh" class = "button">
+  </form>
+  <form action="/generate">
+    <input type="submit" name="Generate Order" value="Generate Order" class = "button">
+  </form>
+  <header>{% block head %}{% endblock %}</header>
+  {% block body %}{% endblock %}
+</body>
+</html>
+

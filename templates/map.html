@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_2dfc6bed2d31412a8aa4a9691b587849 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_2dfc6bed2d31412a8aa4a9691b587849" ></div>
+        
+</body>
+<script>    
+    
+            var map_2dfc6bed2d31412a8aa4a9691b587849 = L.map(
+                "map_2dfc6bed2d31412a8aa4a9691b587849",
+                {
+                    center: [52.0564, -2.716],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 14,
+                    zoomControl: true,
+                    preferCanvas: false,
+                    titles: "Hereford",
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_0d0a961afb9549679fcb00e9506b86db = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_2dfc6bed2d31412a8aa4a9691b587849);
+        
+    
+            var marker_75a62d6933774fcea57baa400041d5c9 = L.marker(
+                [52.0591716, -2.7090934],
+                {}
+            ).addTo(map_2dfc6bed2d31412a8aa4a9691b587849);
+        
+    
+            var icon_1b7949bf05644a40ba3a533a3237997d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_75a62d6933774fcea57baa400041d5c9.setIcon(icon_1b7949bf05644a40ba3a533a3237997d);
+        
+    
+        var popup_b34d77b0f82e4ce288537fe9d840aebb = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7bcd77512e41446e9e87e6e73bf71c39 = $(`<div id="html_7bcd77512e41446e9e87e6e73bf71c39" style="width: 100.0%; height: 100.0%;">Business</div>`)[0];
+            popup_b34d77b0f82e4ce288537fe9d840aebb.setContent(html_7bcd77512e41446e9e87e6e73bf71c39);
+        
+
+        marker_75a62d6933774fcea57baa400041d5c9.bindPopup(popup_b34d77b0f82e4ce288537fe9d840aebb)
+        ;
+
+        
+    
+    
+            marker_75a62d6933774fcea57baa400041d5c9.bindTooltip(
+                `<div>
+                     Restaurant
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_78078697f3f548448730f9e36e132d0e = L.marker(
+                [52.0498308, -2.7222524],
+                {}
+            ).addTo(map_2dfc6bed2d31412a8aa4a9691b587849);
+        
+    
+            var icon_865019eeba3a4509a8600a85d05d1c5d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "wrench", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_78078697f3f548448730f9e36e132d0e.setIcon(icon_865019eeba3a4509a8600a85d05d1c5d);
+        
+    
+        var popup_b443b0c05fdd42758c1eb68d01dfe27e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c99cfcd3bdf4468fa70192b6477f3d43 = $(`<div id="html_c99cfcd3bdf4468fa70192b6477f3d43" style="width: 100.0%; height: 100.0%;">petrol</div>`)[0];
+            popup_b443b0c05fdd42758c1eb68d01dfe27e.setContent(html_c99cfcd3bdf4468fa70192b6477f3d43);
+        
+
+        marker_78078697f3f548448730f9e36e132d0e.bindPopup(popup_b443b0c05fdd42758c1eb68d01dfe27e)
+        ;
+
+        
+    
+    
+            marker_78078697f3f548448730f9e36e132d0e.bindTooltip(
+                `<div>
+                     Petrol Station
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9c79b4e968a142dbbe1d25dea9981ea0 = L.marker(
+                [52.0495476, -2.7199799],
+                {}
+            ).addTo(map_2dfc6bed2d31412a8aa4a9691b587849);
+        
+    
+            var icon_a7e70c36f24b4d5fa102ed38b2e7bc4e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "wrench", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_9c79b4e968a142dbbe1d25dea9981ea0.setIcon(icon_a7e70c36f24b4d5fa102ed38b2e7bc4e);
+        
+    
+        var popup_9c92dde8422f43a3a56af7ec34835b89 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_aae66421dda244108d8c8eda2a2a9adf = $(`<div id="html_aae66421dda244108d8c8eda2a2a9adf" style="width: 100.0%; height: 100.0%;">petrol</div>`)[0];
+            popup_9c92dde8422f43a3a56af7ec34835b89.setContent(html_aae66421dda244108d8c8eda2a2a9adf);
+        
+
+        marker_9c79b4e968a142dbbe1d25dea9981ea0.bindPopup(popup_9c92dde8422f43a3a56af7ec34835b89)
+        ;
+
+        
+    
+    
+            marker_9c79b4e968a142dbbe1d25dea9981ea0.bindTooltip(
+                `<div>
+                     Petrol Station
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b6fb964d40624c8a809d65e5761120a7 = L.marker(
+                [52.05872660000001, -2.7280884],
+                {}
+            ).addTo(map_2dfc6bed2d31412a8aa4a9691b587849);
+        
+    
+            var icon_0df998b659c94aeeb812098d12b7f656 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "wrench", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_b6fb964d40624c8a809d65e5761120a7.setIcon(icon_0df998b659c94aeeb812098d12b7f656);
+        
+    
+        var popup_4a1f9191d38e4675a00aa268801b9461 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_edcfe601125f417fbc2cfd93e2bc757e = $(`<div id="html_edcfe601125f417fbc2cfd93e2bc757e" style="width: 100.0%; height: 100.0%;">petrol</div>`)[0];
+            popup_4a1f9191d38e4675a00aa268801b9461.setContent(html_edcfe601125f417fbc2cfd93e2bc757e);
+        
+
+        marker_b6fb964d40624c8a809d65e5761120a7.bindPopup(popup_4a1f9191d38e4675a00aa268801b9461)
+        ;
+
+        
+    
+    
+            marker_b6fb964d40624c8a809d65e5761120a7.bindTooltip(
+                `<div>
+                     Petrol Station
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a7a2d26f2229402cabc9cfe1d1d59727 = L.marker(
+                [52.0549794, -2.7019745],
+                {}
+            ).addTo(map_2dfc6bed2d31412a8aa4a9691b587849);
+        
+    
+            var icon_529b9f1e9d8b4ef29d71219578ffc6a0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "wrench", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_a7a2d26f2229402cabc9cfe1d1d59727.setIcon(icon_529b9f1e9d8b4ef29d71219578ffc6a0);
+        
+    
+        var popup_8a541f90b882433baa40c6204f0f35a0 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_304d9c9ba5b34bf784be7ffe7308e09e = $(`<div id="html_304d9c9ba5b34bf784be7ffe7308e09e" style="width: 100.0%; height: 100.0%;">petrol</div>`)[0];
+            popup_8a541f90b882433baa40c6204f0f35a0.setContent(html_304d9c9ba5b34bf784be7ffe7308e09e);
+        
+
+        marker_a7a2d26f2229402cabc9cfe1d1d59727.bindPopup(popup_8a541f90b882433baa40c6204f0f35a0)
+        ;
+
+        
+    
+    
+            marker_a7a2d26f2229402cabc9cfe1d1d59727.bindTooltip(
+                `<div>
+                     Petrol Station
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3ffc5ae7822a4191a515e9ef20c89d42 = L.marker(
+                [52.05524130000001, -2.6989409],
+                {}
+            ).addTo(map_2dfc6bed2d31412a8aa4a9691b587849);
+        
+    
+            var icon_c5107c8210bc4f3a8c2568bf45fdf807 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "wrench", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_3ffc5ae7822a4191a515e9ef20c89d42.setIcon(icon_c5107c8210bc4f3a8c2568bf45fdf807);
+        
+    
+        var popup_ed4430bec7b64f43a36440e17affecfb = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c1d86b1cd9d64f8ea937a05c195068bb = $(`<div id="html_c1d86b1cd9d64f8ea937a05c195068bb" style="width: 100.0%; height: 100.0%;">petrol</div>`)[0];
+            popup_ed4430bec7b64f43a36440e17affecfb.setContent(html_c1d86b1cd9d64f8ea937a05c195068bb);
+        
+
+        marker_3ffc5ae7822a4191a515e9ef20c89d42.bindPopup(popup_ed4430bec7b64f43a36440e17affecfb)
+        ;
+
+        
+    
+    
+            marker_3ffc5ae7822a4191a515e9ef20c89d42.bindTooltip(
+                `<div>
+                     Petrol Station
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3c40620e365543109a74133ddb38edc3 = L.marker(
+                [52.04702150000001, -2.720007500000001],
+                {}
+            ).addTo(map_2dfc6bed2d31412a8aa4a9691b587849);
+        
+    
+            var icon_be87f17361f64732bf2364863628fd13 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "wrench", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_3c40620e365543109a74133ddb38edc3.setIcon(icon_be87f17361f64732bf2364863628fd13);
+        
+    
+        var popup_f18098a45f124592a308b40b56202b03 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6ede0cb630cf45b784addc9e11cc4244 = $(`<div id="html_6ede0cb630cf45b784addc9e11cc4244" style="width: 100.0%; height: 100.0%;">petrol</div>`)[0];
+            popup_f18098a45f124592a308b40b56202b03.setContent(html_6ede0cb630cf45b784addc9e11cc4244);
+        
+
+        marker_3c40620e365543109a74133ddb38edc3.bindPopup(popup_f18098a45f124592a308b40b56202b03)
+        ;
+
+        
+    
+    
+            marker_3c40620e365543109a74133ddb38edc3.bindTooltip(
+                `<div>
+                     Petrol Station
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b89293e78abf48a3ab43feb23882b8e9 = L.marker(
+                [52.06754919999999, -2.722485799999999],
+                {}
+            ).addTo(map_2dfc6bed2d31412a8aa4a9691b587849);
+        
+    
+            var icon_846f97e5375e49ec83753343375eca40 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "wrench", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_b89293e78abf48a3ab43feb23882b8e9.setIcon(icon_846f97e5375e49ec83753343375eca40);
+        
+    
+        var popup_bb6b8047ff004f529515fcc15e495d94 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6a444486b0d740cfa60d57e20858a35d = $(`<div id="html_6a444486b0d740cfa60d57e20858a35d" style="width: 100.0%; height: 100.0%;">petrol</div>`)[0];
+            popup_bb6b8047ff004f529515fcc15e495d94.setContent(html_6a444486b0d740cfa60d57e20858a35d);
+        
+
+        marker_b89293e78abf48a3ab43feb23882b8e9.bindPopup(popup_bb6b8047ff004f529515fcc15e495d94)
+        ;
+
+        
+    
+    
+            marker_b89293e78abf48a3ab43feb23882b8e9.bindTooltip(
+                `<div>
+                     Petrol Station
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_836f52f7dca54ded90c3b57f8d14f824 = L.marker(
+                [52.05507369999999, -2.7243233],
+                {}
+            ).addTo(map_2dfc6bed2d31412a8aa4a9691b587849);
+        
+    
+            var icon_c6c5c01f4e964b24bd72bc0c31a720dd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "wrench", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_836f52f7dca54ded90c3b57f8d14f824.setIcon(icon_c6c5c01f4e964b24bd72bc0c31a720dd);
+        
+    
+        var popup_9b7728baaa2546dc9cb20d320d5e83ce = L.popup({"maxWidth": "100%"});
+
+        
+            var html_63ed704ec78a46ab86b95fa566840f37 = $(`<div id="html_63ed704ec78a46ab86b95fa566840f37" style="width: 100.0%; height: 100.0%;">petrol</div>`)[0];
+            popup_9b7728baaa2546dc9cb20d320d5e83ce.setContent(html_63ed704ec78a46ab86b95fa566840f37);
+        
+
+        marker_836f52f7dca54ded90c3b57f8d14f824.bindPopup(popup_9b7728baaa2546dc9cb20d320d5e83ce)
+        ;
+
+        
+    
+    
+            marker_836f52f7dca54ded90c3b57f8d14f824.bindTooltip(
+                `<div>
+                     Petrol Station
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f4db29b622ac423d889a475aaa664bce = L.marker(
+                [52.05501899999999, -2.6988727],
+                {}
+            ).addTo(map_2dfc6bed2d31412a8aa4a9691b587849);
+        
+    
+            var icon_f7b8da976c2d4a8e9e0b5efef368d049 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "wrench", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_f4db29b622ac423d889a475aaa664bce.setIcon(icon_f7b8da976c2d4a8e9e0b5efef368d049);
+        
+    
+        var popup_ce7300b06f3d426989c62d42507c2c7e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9c6a0052fa3149e6a36df878b213dc0a = $(`<div id="html_9c6a0052fa3149e6a36df878b213dc0a" style="width: 100.0%; height: 100.0%;">petrol</div>`)[0];
+            popup_ce7300b06f3d426989c62d42507c2c7e.setContent(html_9c6a0052fa3149e6a36df878b213dc0a);
+        
+
+        marker_f4db29b622ac423d889a475aaa664bce.bindPopup(popup_ce7300b06f3d426989c62d42507c2c7e)
+        ;
+
+        
+    
+    
+            marker_f4db29b622ac423d889a475aaa664bce.bindTooltip(
+                `<div>
+                     Petrol Station
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d5f63c0ea3ff4d66b8ec548c2d1f53da = L.marker(
+                [52.0586776, -2.7281056],
+                {}
+            ).addTo(map_2dfc6bed2d31412a8aa4a9691b587849);
+        
+    
+            var icon_af1e9867232d4e66b50bb223982013ae = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "wrench", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_d5f63c0ea3ff4d66b8ec548c2d1f53da.setIcon(icon_af1e9867232d4e66b50bb223982013ae);
+        
+    
+        var popup_c2c92a0d8fbc49648b2c5bfcbe8efa21 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c4964282651841d7a0ceebc46e7f1cdb = $(`<div id="html_c4964282651841d7a0ceebc46e7f1cdb" style="width: 100.0%; height: 100.0%;">petrol</div>`)[0];
+            popup_c2c92a0d8fbc49648b2c5bfcbe8efa21.setContent(html_c4964282651841d7a0ceebc46e7f1cdb);
+        
+
+        marker_d5f63c0ea3ff4d66b8ec548c2d1f53da.bindPopup(popup_c2c92a0d8fbc49648b2c5bfcbe8efa21)
+        ;
+
+        
+    
+    
+            marker_d5f63c0ea3ff4d66b8ec548c2d1f53da.bindTooltip(
+                `<div>
+                     Petrol Station
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_be4a1455d8484ed7b284cd08568eddcb = L.marker(
+                [52.0558215, -2.7245459],
+                {}
+            ).addTo(map_2dfc6bed2d31412a8aa4a9691b587849);
+        
+    
+            var icon_69c0e0d485fc4097b317e0796c486fa9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "wrench", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_be4a1455d8484ed7b284cd08568eddcb.setIcon(icon_69c0e0d485fc4097b317e0796c486fa9);
+        
+    
+        var popup_6c426a849dc54202be10e3d4732b667f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f016d1f3c17c4ccdbeeb40672880f8fd = $(`<div id="html_f016d1f3c17c4ccdbeeb40672880f8fd" style="width: 100.0%; height: 100.0%;">petrol</div>`)[0];
+            popup_6c426a849dc54202be10e3d4732b667f.setContent(html_f016d1f3c17c4ccdbeeb40672880f8fd);
+        
+
+        marker_be4a1455d8484ed7b284cd08568eddcb.bindPopup(popup_6c426a849dc54202be10e3d4732b667f)
+        ;
+
+        
+    
+    
+            marker_be4a1455d8484ed7b284cd08568eddcb.bindTooltip(
+                `<div>
+                     Petrol Station
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3fe247a18a8841f5bbf123ff36fa5b57 = L.marker(
+                [52.0593484, -2.708675],
+                {}
+            ).addTo(map_2dfc6bed2d31412a8aa4a9691b587849);
+        
+    
+            var icon_80a912ddc74545dbb656c92961163640 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "wrench", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_3fe247a18a8841f5bbf123ff36fa5b57.setIcon(icon_80a912ddc74545dbb656c92961163640);
+        
+    
+        var popup_59ebe2a6439d4f6bbbc5101fc903054d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b7f5bcf57a0e4af7890f1dec741d5048 = $(`<div id="html_b7f5bcf57a0e4af7890f1dec741d5048" style="width: 100.0%; height: 100.0%;">petrol</div>`)[0];
+            popup_59ebe2a6439d4f6bbbc5101fc903054d.setContent(html_b7f5bcf57a0e4af7890f1dec741d5048);
+        
+
+        marker_3fe247a18a8841f5bbf123ff36fa5b57.bindPopup(popup_59ebe2a6439d4f6bbbc5101fc903054d)
+        ;
+
+        
+    
+    
+            marker_3fe247a18a8841f5bbf123ff36fa5b57.bindTooltip(
+                `<div>
+                     Petrol Station
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_855f169f55a9456ab24c3d2bd6c0f166 = L.marker(
+                [52.0495178, -2.719939],
+                {}
+            ).addTo(map_2dfc6bed2d31412a8aa4a9691b587849);
+        
+    
+            var icon_09ef9cf33e15465ba7d5670f57a79a89 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "wrench", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_855f169f55a9456ab24c3d2bd6c0f166.setIcon(icon_09ef9cf33e15465ba7d5670f57a79a89);
+        
+    
+        var popup_e117328142b04a4fac60eb3981725052 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_de9008d490ec4b459301dbe42bd88c6e = $(`<div id="html_de9008d490ec4b459301dbe42bd88c6e" style="width: 100.0%; height: 100.0%;">petrol</div>`)[0];
+            popup_e117328142b04a4fac60eb3981725052.setContent(html_de9008d490ec4b459301dbe42bd88c6e);
+        
+
+        marker_855f169f55a9456ab24c3d2bd6c0f166.bindPopup(popup_e117328142b04a4fac60eb3981725052)
+        ;
+
+        
+    
+    
+            marker_855f169f55a9456ab24c3d2bd6c0f166.bindTooltip(
+                `<div>
+                     Petrol Station
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2a3b5ba3c7344a84bc4c2ace5a54b0aa = L.marker(
+                [52.0672484, -2.7310463],
+                {}
+            ).addTo(map_2dfc6bed2d31412a8aa4a9691b587849);
+        
+    
+            var icon_78738fcc1d4548c1bccf02bbf33e5916 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "wrench", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_2a3b5ba3c7344a84bc4c2ace5a54b0aa.setIcon(icon_78738fcc1d4548c1bccf02bbf33e5916);
+        
+    
+        var popup_f4b5f181d8634eba985952c8b60410c1 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d26fff5141284fc0af00083be5b4a583 = $(`<div id="html_d26fff5141284fc0af00083be5b4a583" style="width: 100.0%; height: 100.0%;">petrol</div>`)[0];
+            popup_f4b5f181d8634eba985952c8b60410c1.setContent(html_d26fff5141284fc0af00083be5b4a583);
+        
+
+        marker_2a3b5ba3c7344a84bc4c2ace5a54b0aa.bindPopup(popup_f4b5f181d8634eba985952c8b60410c1)
+        ;
+
+        
+    
+    
+            marker_2a3b5ba3c7344a84bc4c2ace5a54b0aa.bindTooltip(
+                `<div>
+                     Petrol Station
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0cdb6472cdbb4b1bbfff94d198132e6b = L.marker(
+                [52.066731200000376, -2.749309900000014],
+                {}
+            ).addTo(map_2dfc6bed2d31412a8aa4a9691b587849);
+        
+    
+            var icon_93eb67dad7ce48aabd367fdc09d98154 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "car", "iconColor": "white", "markerColor": "yellow", "prefix": "glyphicon"}
+            );
+            marker_0cdb6472cdbb4b1bbfff94d198132e6b.setIcon(icon_93eb67dad7ce48aabd367fdc09d98154);
+        
+    
+        var popup_7f149ac270544f3eba19ba969d1bc9fd = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8b48e05587df4af8812fd35aca992464 = $(`<div id="html_8b48e05587df4af8812fd35aca992464" style="width: 100.0%; height: 100.0%;">('Name: Greg', ' Fatigue: 544', ' Fuel  9456', ' State: idle')</div>`)[0];
+            popup_7f149ac270544f3eba19ba969d1bc9fd.setContent(html_8b48e05587df4af8812fd35aca992464);
+        
+
+        marker_0cdb6472cdbb4b1bbfff94d198132e6b.bindPopup(popup_7f149ac270544f3eba19ba969d1bc9fd)
+        ;
+
+        
+    
+    
+            marker_0cdb6472cdbb4b1bbfff94d198132e6b.bindTooltip(
+                `<div>
+                     Greg
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_66e46253e8174f03a3a218a62d4fa3b9 = L.marker(
+                [52.06718019999953, -2.7447036999999477],
+                {}
+            ).addTo(map_2dfc6bed2d31412a8aa4a9691b587849);
+        
+    
+            var icon_217c16a07b38407f9421fc1c74c140b6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "car", "iconColor": "white", "markerColor": "yellow", "prefix": "glyphicon"}
+            );
+            marker_66e46253e8174f03a3a218a62d4fa3b9.setIcon(icon_217c16a07b38407f9421fc1c74c140b6);
+        
+    
+        var popup_10a24a3a675b4e9d8225afceaee76f69 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a72b5252e0c0436eabb3529ed3469b19 = $(`<div id="html_a72b5252e0c0436eabb3529ed3469b19" style="width: 100.0%; height: 100.0%;">('Name: Rosa', ' Fatigue: 474', ' Fuel  9526', ' State: idle')</div>`)[0];
+            popup_10a24a3a675b4e9d8225afceaee76f69.setContent(html_a72b5252e0c0436eabb3529ed3469b19);
+        
+
+        marker_66e46253e8174f03a3a218a62d4fa3b9.bindPopup(popup_10a24a3a675b4e9d8225afceaee76f69)
+        ;
+
+        
+    
+    
+            marker_66e46253e8174f03a3a218a62d4fa3b9.bindTooltip(
+                `<div>
+                     Rosa
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ccc38b3fde7345cdafce3df152e7de81 = L.marker(
+                [52.06738140000043, -2.712784900000036],
+                {}
+            ).addTo(map_2dfc6bed2d31412a8aa4a9691b587849);
+        
+    
+            var icon_d01e5874e12b4c059f865227cf30f531 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "car", "iconColor": "white", "markerColor": "yellow", "prefix": "glyphicon"}
+            );
+            marker_ccc38b3fde7345cdafce3df152e7de81.setIcon(icon_d01e5874e12b4c059f865227cf30f531);
+        
+    
+        var popup_c89ab0d1c3e54ebd9fd5924575629a1f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_66e7ed8557d54459a965abf3f0e20033 = $(`<div id="html_66e7ed8557d54459a965abf3f0e20033" style="width: 100.0%; height: 100.0%;">('Name: Milton', ' Fatigue: 230', ' Fuel  9770', ' State: idle')</div>`)[0];
+            popup_c89ab0d1c3e54ebd9fd5924575629a1f.setContent(html_66e7ed8557d54459a965abf3f0e20033);
+        
+
+        marker_ccc38b3fde7345cdafce3df152e7de81.bindPopup(popup_c89ab0d1c3e54ebd9fd5924575629a1f)
+        ;
+
+        
+    
+    
+            marker_ccc38b3fde7345cdafce3df152e7de81.bindTooltip(
+                `<div>
+                     Milton
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>
